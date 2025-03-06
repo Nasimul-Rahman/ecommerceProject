@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>shop</title>
+    <style> 
+        body { background-color: #ADD8E6; }
+        h1 { text-align: center; }
+        img { display: block; margin-left: auto; margin-right: auto; }
+        .navbar {
+            background-color: #297791;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .left-column, .right-column {
+            width: 48%; /* Each column will take up 48% of the screen */
+        }
+        .left-column {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #297791;
+        }
+        .right-column {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #297791;
+        }
+        .product-list, .selected-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            margin: 10px 0;
+            background-color: #cecece;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .product-item button {
+            background-color: #297791;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .product-item button:hover {
+            background-color: #555;
+        }
+        .selected-item {
+            margin: 10px 0;
+            background-color: #cecece;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>  
+    <div class="navbar">
+        <a href="index.html">Home</a> 
+    </div>
+
+    <hr />
+
+    <h1>Fantastic Custom Builds!</h1> <!-- header tag-->
+    
+    <div class="content">
+        <!-- Left Column: List of PC Parts -->
+        <div class="left-column">
+            <h2>Select Your PC Parts</h2>
+            <ul class="product-list">
+                <li class="product-item">
+                    CPU
+                    <button onclick="addToSelected('CPU')">Add to List</button>
+                </li>
+                <li class="product-item">
+                    GPU
+                    <button onclick="addToSelected('GPU')">Add to List</button>
+                </li>
+                <li class="product-item">
+                    RAM
+                    <button onclick="addToSelected('RAM')">Add to List</button>
+                </li>
+                <li class="product-item">
+                    SSD
+                    <button onclick="addToSelected('SSD')">Add to List</button>
+                </li>
+                <li class="product-item">
+                    Motherboard
+                    <button onclick="addToSelected('Motherboard')">Add to List</button>
+                </li>
+                <li class="product-item">
+                    Power Supply
+                    <button onclick="addToSelected('Power Supply')">Add to List</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Column: List of Selected PC Parts -->
+        <div class="right-column">
+            <h2>Your Selected Parts</h2>
+            <ul class="selected-list" id="selected-list">
+                <!-- Selected parts will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function addToSelected(part) {
+            var selectedList = document.getElementById('selected-list');
+            var listItem = document.createElement('li');
+            listItem.classList.add('selected-item');
+            listItem.textContent = part;
+            selectedList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

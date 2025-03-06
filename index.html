@@ -1,148 +1,94 @@
-
 <!--?xml version="1.0" encoding="UTF-8"?-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
-<!-- XML/XHTML boilerplate code -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <title>Homepage</title> <!-- title tag-->
+    <title>Homepage</title>
+    <style> 
+        body { background-color: #ADD8E6; margin: 0; }
+        .navbar {
+            background-color: #297791;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+        }
+        .backg {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .backg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(5px);
+
+        }
+        .backg h1 {
+            position: absolute;
+            color: white;
+            font-size: 36px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .button-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+        }
+        .button-section button {
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            background-color: #297791;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .button-section button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
-<style> 
-body { 
-        background-color: #ADD8E6; 
-    }
-h1 {text-align: center;}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar {
-    background-color: #297791;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px 0;
-}
-.navbar a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 18px;
-}
-.navbar a:hover {
-    background-color: #555;
-    color: white;
-    border-radius: 5px;
-}
-div.a {
-  background-color: #cecece;
-  width: 1100px;
-  border: 15px solid #297791;
-  padding: 50px;
-  margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 20px;
-}
-div.b {
-  background-color: #cecece;
-  width: 1100px;
-  border: 15px solid #297791;
-  padding: 50px;
-  margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-p{
-    text-align: center;
-
-}
-address{
-    text-align: center;
-
-}
-.image-link {
-    display: inline-block;
-}
-
-
-</style>
-</head>
-
 <body>  
+    <div class="navbar">
+        <a href="index.html">Home</a> 
+        <a href="shop.html">Shop</a>
+        <a href="custom.html">Custom Build</a>
+        <a href="merch.html">Merch</a>
+        <a href="social.html">Socials</a>
+    </div>
 
-<div class="navbar">
-    <a href="index.html">Home</a> <!-- external web tag--> 
-    <a href="mini2content.html">DJI Mini 2 Content</a> <!-- external web tag-->
-    <a href="mini3content.html">DJI Mini 3 Pro Content</a> <!-- external web tag-->
-    <a href="mini2review.html">DJI Mini 2 Review</a> <!-- external web tag-->
-    <a href="mini3review.html">DJI Mini 3 Pro Review</a> <!-- external web tag-->
-    <a href="controller.html">Controller Comparison</a> <!-- external web tag-->
-    <a href="future.html">Future Purchase Thoughts</a> <!-- external web tag-->
-    <a href="accessories.html">DJI Accessories</a> <!-- external web tag-->
-    <a href="insta.html">Insta Page</a> <!-- external web tag-->
-    <a href="citation.html">Citation</a> <!-- external web tag-->
-</div>
+    <hr />
 
-
-<hr /> <!-- hori rule tag-->
-
-<h1>Welcome To My Drone Page</h1> <!-- header tag-->
-<div style="text-align: center;"> <!-- div tag-->
-    <a href="mini2review.html" class="image-link">
-            <img src="dronehome.jpg" alt="Photo of the mini 2 in the air flying." width="500" height="300" /><!-- img tag-->
-    </a>
-</div>
-    <!-- para tag-->
-<div class="a"> <!-- div class tag-->
-    Welcome to my page about one of my hobbies, <b>drones!</b> 
-        I have been interested in flying drones to capture 
-        content since I was a kid, and I finally got the chance 
-        to do so after I purchased my first drone 3 years ago. 
-        My first drone was the <i>DJI Mini 2</i>, which is a great beginner 
-        drone to get into. After using it for 3 years I finally switched 
-        to the <i>DJI Mini 3 Pro</i> which is my current drone. I talk more about
-        how they compare in their separate pages. I also separately present
-        some content that I took with each of them.  The images have been compressed to have better webpage performance.
-        There is a lot to talk about with the different accessories and controllers so you can find more
-        about them in the dedicated pages. I also have an Instagram page which
-        is about photography, and I share photos I captured on my drones.
-        I also have some future plans that I shared in its dedicated page. 
-        I hope you enjoy the content and if you have feedback you can fill out the form.
-</div>
-
-
+    <div class="backg">
+        <img src="backpic.PNG" alt="backg Image">
+        <h1>Welcome To Fantastic PC Store!</h1>
+    </div>
     
-<div class="b"> <!-- div class tag-->
- 
-    <h2>Feedback Form</h2>
-        <form action="mailto:chowdh52@uwindsor.ca" method="post"> <!-- form tag-->
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
-
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
-
-            <label for="message">Feedback:</label><br />
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br />
-
-            <input type="submit" value="Submit" />
-        </form>
-</div>
-
-<p>Email me at: <a href="mailto:chowdh52@uwindsor.ca">chowdh52@uwindsor.ca</a></p> <!-- mailto tag-->
-
-<p><a href="#top">Back to Top of Page</a></p> <!-- internal link tag-->
-
-<address> <!-- Address tag for name and mail -->
-    Adib Md Alim Chowdhury
-       <br  /> <!-- break tag-->
-    chowdh52@uwindsor.ca <!-- displaying mail-->
-</address>
-
+    <div class="button-section">
+        <a href="shop.html"><button>Shop Pre-builds</button></a>
+        <a href="custom.html"><button>Custom Builds</button></a>
+        <a href="merch.html"><button>Merch</button></a>
+    </div>
 </body>
-
 </html>
